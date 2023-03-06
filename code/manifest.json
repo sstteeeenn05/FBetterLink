@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "FBetterLink",
-  "description": "Say goodbye to FaceBook link tracker",
+  "description": "Say goodbye to Facebook link tracker",
   "version": "1.1",
   "permissions":["scripting","tabs"],
   "host_permissions":["https://*.facebook.com/*"],
