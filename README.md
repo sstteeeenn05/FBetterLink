@@ -12,7 +12,7 @@ Go to Release of this repository.<br/>
 Download FBetterLink_(version).crx<br/>
 <img src="release_installation_1.png" width="800px"/>
 
-Go to the Extensions page of your browser. [Chrome](chrome://extensions) / [Edge](edge://extensions)<br/>
+Go to the Extensions page of your browser. ```chrome://extensions``` or ```edge://extensions```<br/>
 Drag and drop the crx file to the page.<br/>
 <img src="release_installation_2.gif" width="800px"/>
 
@@ -22,7 +22,7 @@ The extension will be installed by your browser.
 Download this repository as zip, and extract it.<br/>
 <img src="non_release_installation_0.png" width="600px"/>
 
-Go to the Extensions page of your browser. [Chrome](chrome://extensions) / [Edge](edge://extensions)<br/>
+Go to the Extensions page of your browser. ```chrome://extensions``` or ```edge://extensions```<br/>
 <img src="non_release_installation_1.png" width="300px"/>
 
 Open Developer mode then click "Load unpacked", select the folder which just extracted.<br/>
