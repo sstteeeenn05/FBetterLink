@@ -4,7 +4,7 @@ Say goodbye to Facebook link tracker<br/>
 
 ## Requirement
 A Chromium-based desktop browser such as Google Chrome or Microsoft Edge with Manifest V3 support.
-I don't know from what version does the browser support Manifest V3, you can just try then report it to me.
+> I don't know from what version does the browser support Manifest V3, you can just try then report it to me.
 
 ## Release Installation
 1. Go to Release of this repository.<br/>
@@ -13,7 +13,7 @@ I don't know from what version does the browser support Manifest V3, you can jus
 2. Download FBetterLink_(version).crx<br/>
 <img src="img/release_installation_1.png" width="800px"/>
 
-3. Go to the Extensions page of your browser. ```chrome://extensions``` or ```edge://extensions```<br/>
+3. Go to the Extensions page of your browser. <chrome://extensions> or<edge://extensions><br/>
 4. Drag and drop the crx file to the page.<br/>
 <img src="img/release_installation_2.gif" width="800px"/>
 
@@ -23,7 +23,7 @@ The extension will be installed by your browser.
 1. Download this repository as zip, and extract it.<br/>
 <img src="img/non_release_installation_0.png" width="600px"/>
 
-2. Go to the Extensions page of your browser. ```chrome://extensions``` or ```edge://extensions```<br/>
+2. Go to the Extensions page of your browser. <chrome://extensions> or <edge://extensions><br/>
 <img src="img/non_release_installation_1.png" width="300px"/>
 
 3. Open Developer mode then click "Load unpacked", select the folder which just extracted.<br/>
