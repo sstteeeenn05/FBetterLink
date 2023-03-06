@@ -10,8 +10,23 @@ setInterval(()=>{
 		if(betterHref!=originHref){
 			link.addEventListener('click',e=>e.preventDefault());
 			link.addEventListener('click',()=>window.open(betterHref,'_blank').focus());
-			console.log("FBetterLink-changed:"+betterHref);
 			link.setAttribute('FBetterLink',"");
+			link.setAttribute('title',"This link is no Facebook link tracker");
+			let FBetterLinkTag=document.createElement('span');
+			FBetterLinkTag.innerText="√FBetterLink"
+			FBetterLinkTag.setAttribute('title',"This link is no Facebook link tracker");
+			FBetterLinkTag.style.cursor="pointer";
+			FBetterLinkTag.style.backgroundColor="var(--blue-link)";
+			FBetterLinkTag.style.fontSize="10px";
+			FBetterLinkTag.style.color="white";
+			FBetterLinkTag.style.padding="3px";
+			FBetterLinkTag.style.margin="3px";
+			FBetterLinkTag.style.borderRadius="3px";
+			FBetterLinkTag.addEventListener('click',()=>{
+				chrome.runtime.sendMessage('openPopup');
+			});
+			link.after(FBetterLinkTag);
+			console.log("FBetterLink-changed:"+betterHref);
 		}
 	})
 },1000)

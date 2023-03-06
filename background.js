@@ -1,6 +1,16 @@
-chrome.tabs.onUpdated.addListener((tabId,changeInfo,tab)=>{
+chrome.tabs.onUpdated.addListener((tabId)=>{
 	chrome.scripting.executeScript({
 		target:{tabId:tabId},
 		files:['content-script.js']
 	});
+})
+chrome.runtime.onMessage.addListener((request)=>{
+	if(request==='openPopup'){
+		chrome.windows.create({
+			url:"FBetterLink.html",
+			type:"panel",
+			width:350,
+			height:500
+		});
+	}
 })
