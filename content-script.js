@@ -11,10 +11,10 @@ setInterval(()=>{
 			link.addEventListener('click',e=>e.preventDefault());
 			link.addEventListener('click',()=>window.open(betterHref,'_blank').focus());
 			link.setAttribute('FBetterLink',"");
-			link.setAttribute('title',"This link is no Facebook link tracker");
+			link.setAttribute('title',"Facebook Link Tracker Disabled");
 			let FBetterLinkTag=document.createElement('span');
 			FBetterLinkTag.innerText="√FBetterLink"
-			FBetterLinkTag.setAttribute('title',"This link is no Facebook link tracker");
+			FBetterLinkTag.setAttribute('title',"Facebook Link Tracker Disabled");
 			FBetterLinkTag.style.cursor="pointer";
 			FBetterLinkTag.style.backgroundColor="var(--blue-link)";
 			FBetterLinkTag.style.fontSize="10px";
@@ -26,7 +26,7 @@ setInterval(()=>{
 				chrome.runtime.sendMessage('openPopup');
 			});
 			link.after(FBetterLinkTag);
-			console.log("FBetterLink-changed:"+betterHref);
+			console.log("FBetterLink Changed:"+betterHref);
 		}
 	})
 },1000)
